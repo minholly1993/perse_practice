@@ -1,0 +1,54 @@
+#Q1
+a=int(input())
+print((a+820)*2)
+
+#Q2
+a=str(input())
+b=str(input())
+print(b*2+a*6+b*2)
+print(a*2+b*6+a*2)
+
+#Q3
+a=int(input())
+b=int(input())
+c=int(input())
+print(min(a,b,c))
+print(min(a,b,c)*4)
+print(min(a,b,c)**2)
+
+#Q4
+a=int(input())
+b=int(input())
+l=[abs(100-(a+b)),abs(100-(a-b)),abs(100-(b-a))]
+print(min(l))
+
+#Q5
+a=str(input())
+r=a[::-1]
+for i in range(4):
+  if ord(r[i])>ord(a[i]):
+    print(a)
+    print(r)
+    break
+  else:
+    print(r)
+    print(a)
+    break
+    
+#Q6
+
+
+#Q7
+a=0
+t=0
+c=0
+while a==0:
+  b=int(input())
+  c+=1
+  t+=b
+  if t==20:
+    print(c)
+    a=1
+  else:
+      if t>20:
+          t=0
