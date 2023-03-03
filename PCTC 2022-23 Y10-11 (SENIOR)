@@ -36,7 +36,16 @@ for i in range(4):
     break
     
 #Q6
-
+a=0
+b=int(input())
+c=b
+while a==0:
+    invest=int(input())
+    if invest>b:
+        b=invest
+    else:
+        print(invest-c)
+        a=1
 
 #Q7
 a=0
@@ -52,3 +61,69 @@ while a==0:
   else:
       if t>20:
           t=0
+         
+#Q8
+a=str(input())
+b=list(a)
+for i in range(len(a)//2):
+    d=""
+    c=b[len(b)//2-1]
+    b.pop(len(b)//2-1)
+    b.insert(0,c)
+    c=b[len(b)//2]
+    b.pop(len(b)//2)
+    b.insert(len(b),c)
+    for ch in b:
+        d=d+ch
+    print(d)
+    
+#Q9
+x=int(input())
+y=int(input())
+for i in range(10):
+    m=["#","#","#","#","#","#","#","#","#","#"]
+    a=""
+    if i==y:
+        m[x]="X"
+    for ch in m:
+        a+=ch
+    print(a)
+
+#Q10
+a=0
+h0=0
+h1=0
+h00=0
+h11=0
+for i in range(22):
+    r=int(input())
+    if r==0:
+        h00+=1
+    else:
+        h11+=1
+    if h00==11:
+        if a!=1:
+            h1=h11
+            h0=h00
+            a=1
+    elif h11==11:
+        if a!=1:
+            h1=h11
+            h0=h00
+            a=1
+hr0=["H",".",".",".",".",".",".",".",".",".",".","|"]
+hr1=["H",".",".",".",".",".",".",".",".",".",".","|"]
+hr0[h0]="H"
+hr1[h1]="H"
+if h1!=0:
+    hr1[0]="|"
+if h0!=0:
+    hr0[0]="|"
+b=""
+for ch in hr0:
+    b+=ch
+print(b)
+c=""
+for ch in hr1:
+    c+=ch
+print(c)
