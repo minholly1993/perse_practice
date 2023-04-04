@@ -24,3 +24,12 @@ else:
         print("NOT TWINS:" + name1 + " is " + str(age_diff) + " year(s) younger than " + name2)
         
 #Q3
+s=int(input())
+print(3*"_")
+for i in range(s):
+  if i+1<s:
+      print((3+2*i)*"#"+"]_")
+  else:
+       print((3+2*i)*"#"+"]___")
+
+#Q4
