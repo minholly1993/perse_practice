@@ -38,3 +38,42 @@ else:
   print(b + " kg")
 
 # Q6
+a = int(input())
+b = 0
+while a > 0:
+  print(a - b)
+  a -= b
+  b += 1
+
+# Q7
+a = int(input())
+if a % 5 == 0:
+  print(str(int(a/5)) + "x5")
+elif a % 4 == 0:
+  print(str(int(a/4)) + "x4")
+else:
+  print(str(int(a/3)) + "x3")
+
+# Q8
+output = ""
+while True:
+  a = input()
+  if a == "stop":
+    break
+  else:
+    output += (a + " ")
+print(output)
+
+# Q9
+a = []
+b = [None, None, None, None, None]
+output = ""
+for i in range(5):
+  a.append(str(input()))
+for i in a:
+  b[int(i[0:1])-1] = str(i)[1:]
+for i in b:
+  output += str(i)
+print(output)
+
+# Q10
