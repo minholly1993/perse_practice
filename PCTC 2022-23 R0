@@ -1,1 +1,40 @@
 # Q1
+a = int(input())
+b = int(input())
+c = int(input())
+print(a + 2*b + 3*c)
+
+# Q2
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+if a/b > c/d:
+  print(1)
+elif a/b == c/d:
+  print("same")
+else: 
+  print(2)
+
+# Q3
+a = input()
+output = ""
+for i in range(len(a)):
+  output += (a[i]*2)
+print(output)
+
+# Q4
+a = input()
+print('you said "' + a + '"?')
+
+# Q5
+a = input()
+if a == "imperial":
+  b = input()
+  c = input()
+  print(b + " st " + c + " lbs")
+else:
+  b = input()
+  print(b + " kg")
+
+# Q6
